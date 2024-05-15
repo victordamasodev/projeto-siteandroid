@@ -1,0 +1,197 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "idroid";
+    src: url('material/fontes/idroid.otf') format('truetype');
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor1: #83e1ad;
+    --fonte-padrao: "Cherry Cream Soda", system-ui;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    
+    background-color: #c5ebd6;
+    font-family: var(--fonte-padrao)
+}
+header{
+    min-height: 100px;
+    padding: 20px;
+    font-family: "Cherry Cream Soda", system-ui;
+    background-image: linear-gradient(to bottom, #3BD27F, #1A5C38 80%) ;
+    color: white;
+    text-align: center;
+
+    h1{
+        font-family: "Bebas Neue", cursive;
+        font-size: 2em;
+        font-weight: 900;
+        padding:5px;
+        text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.521);
+    }
+
+    h2{
+        margin-top: 5px;
+        font-size: 1em;
+        font-family: var(--fonte-padrao);
+        font-weight: lighter;
+        padding: 0px;
+        margin-bottom: 5px;
+        text-shadow: 1px 1px 0px  rgba(0, 0, 0, 0.521);
+    } 
+}
+
+nav {
+    background-color: #1A5C38;
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.37);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    a{
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        padding: 5px;
+        border-radius: 4px;
+        transition-duration: 0.5s;
+    }
+
+    a:hover{
+        background-color: #3bd27f80;     
+    }
+
+}
+
+main{
+    background-color: white;
+    min-width: 320px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;  
+    text-align: left;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 1px 1px 9px 5px rgba(0, 0, 0, 0.226);
+
+    p{
+        text-indent: 30px;
+        margin: 0px;
+        line-height: 2em;
+        text-align: justify;
+    }
+
+    h2{
+        margin: 15px 0px;
+    }
+
+    .linkmain{
+        color: #1C5E3A;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .linkmain:hover{
+        text-decoration: underline;
+        color: #3BD27F;
+    }
+    .linkmain:after{
+        content: '\1f517';
+    }
+}
+
+section{
+    
+    h1{
+        margin: 20px 0px;
+        font-family: idroid;
+        color: #1C5E3A;
+        font-weight: normal;
+        font-size: 2em;
+    }
+
+    h2{
+        font-family: idroid;
+        font-weight: normal;
+        color: #1C5E3A;
+        padding-left: 5px;
+        background-image: linear-gradient(to right, #84e1ac91, white);
+    }
+
+    img{
+        margin: 20px 0px;
+        width: 100%;
+    }
+    img.imagem2{
+        display: block;
+        max-width: 350px;
+        margin: auto;
+    }
+    
+    .video{ 
+        margin: 15px -10px 0px -10px;
+        background-color: #1A5C38;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.24);
+        
+        iframe{
+            display: block;
+            max-width: 560px;
+            width: 100%;
+            margin: auto;
+        } 
+    }
+      
+}
+aside{
+    background-color: #C5EBD6;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 9px 5px rgba(0, 0, 0, 0.226);
+
+    h3{
+        background-color: #2FA866;
+        text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.288);
+        border-radius: 10px 10px 0px 00px;
+        color: white;
+        padding: 10px;
+    }
+
+    p{
+        margin: 20px 20px;
+        padding-bottom: 5px;
+        text-align: justify;
+    }
+
+    .lista{
+        display: block;
+        list-style-type: '\2714\00A0\00A0';
+        margin: 0px 50px;
+        columns: 2;
+        list-style-position: inside;
+
+        abbr{
+            text-decoration: underline;
+        }
+    }
+}
+
+footer{
+    background-color: #1A5C38;
+    margin-top: 10px;
+    padding: 0px;
+    text-align: center;
+    color: white;
+
+    p{
+        padding: 5px;
+        font-weight: normal;
+        font-size: 14px;
+    }
+}
